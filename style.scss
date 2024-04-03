@@ -1,3 +1,11 @@
+// Mixin para ordenar
+@mixin ordenar() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,10 +22,7 @@ h1 {
 }
 
 .inputs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include ordenar();
     height: 300px;
     gap: 15px;
 
@@ -47,9 +52,6 @@ h1 {
 }
 
 .resultados {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include ordenar();
     gap: 15px;
 }
